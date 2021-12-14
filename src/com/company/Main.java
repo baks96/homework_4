@@ -35,9 +35,9 @@ public class Main {
         for(int i = 0; i < heroesHealth.length; ++i) {
             if (i != 3 && heroesHealth[i] > 0 && heroesHealth[i] < 100 && heroesHealth[3] > 0) {
                 int[] var10000 = heroesHealth;
-                var10000[i] += 50;
+                var10000[i] += 40;
                 String var10001 = heroesAttackType[i];
-                System.out.println("Medic za hilil " + var10001);
+                System.out.println("Medic + " + var10001);
                 break;
             }
         }
@@ -72,7 +72,7 @@ public class Main {
 
         var10000 = heroesHealth;
         var10000[4] -= dmg * colGeroi;
-        System.out.println("Golem po1/5 hero" + dmg * colGeroi);
+        System.out.println("Golem 1/5 hero" + dmg * colGeroi);
     }
 
     public static void Lucky() {
@@ -81,7 +81,7 @@ public class Main {
         if (heroesHealth[5] > 0 && randomm) {
             int[] var10000 = heroesHealth;
             var10000[5] += bossDamage;
-            System.out.println("\nblow prick" + randomm);
+            System.out.println("blow prick" + randomm);
         }
 
     }
